@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>Altiorafi QR Scanner</title>
+
+<link
+  rel="stylesheet"
+  href="style.css"
+>
+
+<script
+  src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"
+></script>
+
+</head>
+
+<body>
+
+<div class="scanner-app">
+
+  <div class="top">
+
+    <div class="logo">
+      A
+    </div>
+
+    <div>
+
+      <h1>
+        Scan QR
+      </h1>
+
+      <p>
+        Altiorafi Attendance
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="info-card">
+
+    <div class="label">
+      Sesi Absensi
+    </div>
+
+    <div
+      id="sessionInfo"
+      class="value"
+    >
+      Memuat sesi...
+    </div>
+
+  </div>
+
+
+  <div class="scanner-card">
+
+    <div id="reader"></div>
+
+    <div
+      id="scannerMessage"
+      class="message"
+    >
+      Arahkan kamera ke QR Code siswa.
+    </div>
+
+  </div>
+
+
+  <div
+    id="result"
+    class="result hidden"
+  ></div>
+
+
+  <button
+    id="startButton"
+    class="button"
+    onclick="startScanner()"
+  >
+    Mulai Kamera
+  </button>
+
+
+  <button
+    class="button secondary"
+    onclick="window.close()"
+  >
+    Kembali
+  </button>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
